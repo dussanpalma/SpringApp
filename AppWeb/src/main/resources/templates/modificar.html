@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" >
+    <head>
+        <title>Datos</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilos_1.css"/>
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}" >
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+    </head>
+    <body> 
+
+        <br/>
+
+
+        <h1 class="Datos" style="text-align:center">DATOS USUARIO</h1>
+        <form style="text-align:center" th:action="@{/guardar}" method="post" 
+              th:object="${persona}">
+
+            <input type="hidden" name="idPersona" th:field="*{idPersona}" />
+            <br/>
+            <br/>
+
+
+            <label for="nombre" ><b>[[#{persona.nombre}]]  </b></label>
+            <br/>
+            <input  type="text" name="nombre" th:field="*{nombre}" placeholder="Nombre.."/>
+            <br/>
+            <span  class="rojo" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}">Error Nombre</span>
+            <br/>
+
+
+
+
+            <label for="apellido"><b>[[#{persona.apellido}]]</b></label>
+            <br/>
+            <input type="text" name="apellido" th:field="*{apellido}" placeholder="Apellido.."/>
+            <br/>
+            <span class="rojo" th:if="${#fields.hasErrors('apellido')}" th:errors="*{apellido}">Error Apellido</span>
+            <br/>
+
+
+
+
+            <label for="cedula"><b>[[#{persona.cedula}]]</b></label>
+            <br/>
+            <input type="text" name="cedula" th:field="*{cedula}" placeholder="Cedula.."/>
+            <br/>
+            <span class="rojo" th:if="${#fields.hasErrors('cedula')}" th:errors="*{cedula}" >Error Cedula</span>
+            <br/>
+
+
+            <label for="email"><b>[[#{persona.email}]]</b></label>
+            <br/>
+            <input type="text" name="email" th:field="*{email}" placeholder="Email.."/>  
+            <br/>
+            <span class="rojo" th:if="${#fields.hasErrors('email')}" th:errors="*{email}" >Error Email</span>
+            <br/>
+
+
+
+            <label for="telefono"><b>[[#{persona.telefono}]]</b></label>
+            <br/>
+            <input type="text" name="telefono" th:field="*{telefono}" placeholder="Telefono.."/>
+            <br/>
+            <span class="rojo" th:if="${#fields.hasErrors('telefono')}" th:errors="*{telefono}" >Error Telefono</span>
+            <br/>
+
+
+            <div style="text-align: center">
+                <form>  
+                    <button class="guardar" type="submit" name="guardar" th:value="Guardar"/><b>Guardar</b></button>
+                </form>  
+                <form method="get" action="/">
+                    <button class="regresar" type="submit"><b>Regresar</b></button>
+                </form>
+            </div>
+        </form>  
+        <br/>
+        <br/>
+        <br/>
+        <footer th:fragment="footer">            
+            <div class="Fot">
+                <br/> 
+                <span> Todos los derechos reservados
+                    <a href="https://www.linkedin.com/in/dussanpalma" 
+                       target="_blank">Linkedin Dussan Palma</a></span>
+            </div>
+        </footer>
+
+
+
+
+        <br/>
+
+
+
+
+        <br/>
+
+        <br/>
+        <br/>
+
+
+
+
+
+    </body>
+
+
+
+
+</html>

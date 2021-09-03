@@ -1,0 +1,180 @@
+
+body{
+    
+
+
+  font-family: sans-serif;
+  font-size: 100%;
+  font-style: oblique;
+
+    
+}
+
+.rojo{
+    
+    color: red;
+    
+position: relative;
+top: -40px; left: 360px;
+    
+    
+}
+
+
+
+
+.Fot{
+    
+    font-size: 100%;
+    
+}
+
+.Datos{
+    
+    color: #036695;
+    font-size: 300%;
+    
+    
+}
+
+
+
+input {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+   border: 2px solid #008CBA;
+  border-radius: 4px;
+}
+
+input:focus {
+  background-color: lightblue;
+}
+
+
+.guardar{
+  width: 25%;
+  background-color: #8CE9F5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+ }
+
+.guardar {
+  transition-duration: 0.4s;
+}
+
+.guardar:hover {
+  background-color: #8CE9F5; /* Green */
+  color: white;
+}
+
+.guardar {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.guardar:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+ .guardar{
+  background-color: #8CE9F5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+ }
+
+.guardar {
+  transition-duration: 0.4s;
+}
+
+.guardar:hover {
+  background-color: #8CE9F5; /* Green */
+  color: white;
+}
+
+.guardar {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.guardar:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+ .guardar{
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+ }
+
+.guardar {
+  transition-duration: 0.4s;
+}
+
+.guardar:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.guardar {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.guardar:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+ .regresar{
+     
+  width: 25%; 
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+ }
+
+.regresar{
+  transition-duration: 0.4s;
+}
+
+.regresar:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.regresar{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.regresar:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
