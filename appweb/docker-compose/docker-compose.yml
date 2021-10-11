@@ -1,0 +1,21 @@
+version: '3.7'
+services:  
+       appweb:
+        image: appweb:v1
+        ports: 
+          - "8080:8080"
+        restart: always
+        networks:
+         - appweb
+       mysql: 
+        image: mysql:8
+        ports: 
+          - "9999:9999"
+        restart: always
+        networks:
+         - appweb
+        environment:
+         MYSQL_DATABASE: prueba
+         MYSQL_ROOT_PASSWORD: admin
+networks:
+  appweb:
